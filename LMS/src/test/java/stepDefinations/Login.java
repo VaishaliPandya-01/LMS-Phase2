@@ -233,10 +233,9 @@ public class Login extends TestBase{
 		System.out.println(actualmsg);
 	}
 
-	@When("Admin/User/Staff clicks submit button after entering password \"(.*)  with less than 8 characters")
-	public void admin_user_staff_clicks_submit_button_after_entering_password_with_less_than_characters(String password, String newpassword) {
+	@When("Admin\\/User\\/Staff clicks submit button after entering password \"(.*)\"  with less than eight characters")
+	public void admin_user_staff_clicks_submit_button_after_entering_password_with_less_than_characters(String password) {
 		login.NewPasswordTxt(password);
-		login.RetypePasswordTxt(newpassword);
 		login.SubmitBtnClick();
 	}
 
@@ -247,24 +246,22 @@ public class Login extends TestBase{
 		System.out.println(actualmsg);
 	}
 
-	@When("Admin/User/Staff clicks submit button after entering password \"(.*) without Capital letter")
-	public void admin_user_staff_clicks_submit_button_after_entering_password_without_capital_letter(String password, String newpassword) {
+	@When("Admin\\/User\\/Staff clicks submit button after entering password \"(.*)\" without Capital letter")
+	public void admin_user_staff_clicks_submit_button_after_entering_password_without_capital_letter(String password) {
 		login.NewPasswordTxt(password);
-		login.RetypePasswordTxt(newpassword);
 		login.SubmitBtnClick();
 	}
 
-	@When("Admin\\/User\\/Staff clicks submit button after entering  password \"(.*) without Number")
+	@When("Admin\\/User\\/Staff clicks submit button after entering  password \"(.*)\" without Number")
 	public void admin_user_staff_clicks_submit_button_after_entering_password_without_number(String password, String newpassword) {
 		login.NewPasswordTxt(password);
 		login.RetypePasswordTxt(newpassword);
 		login.SubmitBtnClick();
 	}
 
-	@When("Admin/User/Staff clicks submit button after entering password \"(.*) without Special character")
-	public void admin_user_staff_clicks_submit_button_after_entering_password_without_special_character(String password, String newpassword) {
+	@When("Admin\\/User\\/Staff clicks submit button after entering password \"(.*)\" without Special character")
+	public void admin_user_staff_clicks_submit_button_after_entering_password_without_special_character(String password) {
 		login.NewPasswordTxt(password);
-		login.RetypePasswordTxt(newpassword);
 		login.SubmitBtnClick();
 	}
 

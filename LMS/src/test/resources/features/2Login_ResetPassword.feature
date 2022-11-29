@@ -15,7 +15,7 @@ Feature: Reset password
 	  Then Admin/User/Staff  should see an error message "password and retype password are mismatched"
 	  
  Scenario: Validate Reset password with lessthan 8 characters
-		When Admin/User/Staff clicks submit button after entering password "abc123"  with less than 8 characters
+		When Admin/User/Staff clicks submit button after entering password "abc123"  with less than eight characters
 		Then It should display an error message "The password must contain 8 characters"
 		
  Scenario: Validate Reset password without capital letter

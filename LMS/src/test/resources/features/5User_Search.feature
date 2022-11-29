@@ -8,7 +8,7 @@ Feature: Search
   Scenario: Verify the presence of Input field for searching
     Given Admin/User/Staff is on any page after Login
     When Admin/User/Staff is on the Manage user page after clicking User Tab
-    Then Admin/User/Staff see the Search Text box has text as "Search".
+    Then Admin/User/Staff see the Search Text box has text as "Search"
 
   Scenario: Verify the presence of search icon and text in the search input filed
     Given Admin/User/Staff is on any page after Login
