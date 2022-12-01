@@ -75,7 +75,7 @@ public class Login extends TestBase{
 		System.out.println(actualmsg);
 	}
 
-	@When("user clicks on login button after entering valid username as \"(.*)\" and invalid password as \"(.*)\"$")
+	@When("^user clicks on login button after entering valid username as \"(.*)\" and invalid password as \"(.*)\"$")
 	public void user_clicks_on_login_button_after_entering_valid_username_and_invalid_password(String username, String password) {
 		login.userNameTxt(username);
 		login.passwordTxt(password);
